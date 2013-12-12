@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>White Elephant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>
+      White Elephant <small>Automated gift choosing (and stealing!) moderator</small></h1>
+  </div>
+  <div class="panel-group" id="setup">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <a data-toggle="collapse" data-parent="#setup" href="#collapseOne">The Setup</a>
+        </h2>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body form-group">
+          <textarea class="form-control" rows="8" cols="20" placeholder="Enter the participants' names here."></textarea>
+          <button type="button" id="start" class="btn btn-danger" data-toggle="collapse" data-target="#collapseOne"> Begin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="play">
+    <div class="col-md-4">
+      <table class="table table-bordered table-hover">
+        <caption>Picking Order</caption>
+        <thead>
+          <tr><th>#</th><th>Name</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <table class="table table-bordered table-hover">
+        <caption>Eligible Presents to Steal</caption>
+        <thead>
+          <tr><th>Name</th><th>Possessions</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="js/jquery-2.0.3.min.js" type="text/javascript1.5"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript1.5"></script>
+</body>
+</html>
